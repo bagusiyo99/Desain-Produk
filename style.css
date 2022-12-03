@@ -1,0 +1,1009 @@
+/* margin untuk mengukur jarak */
+/* "section-p1">(class untuk mengatur jarak) */
+/* hover itu selanjutnya dari awalan */
+/* padding: 0px 8px 8px 0px;   (atas,kanan,bawah,kiri)*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h5 {
+    font-size: 22px;
+    line-height: 24px;
+    color: #222;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 700
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+
+body {
+    width: 100%;
+}
+
+
+/* header  */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10); (shadow bawah navbar) */
+
+    /* agar navbar mengikuti ketika kebawah */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* Navbar khusus mobile */
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/* akhir Navbar khusus mobile */
+
+
+
+#navbar li {
+    /* list tidak ada */
+    list-style: none;
+    position: relative;
+    padding: 0px 20px;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    /* text-decoration: none; mengilangkan garis bawah link */
+    font-size: 15px;
+    font-weight: 700;
+    /* font-weight: 700; mempertebal font */
+    color: black;
+    transition: 0.3 ease;
+
+}
+
+/* ketika di klik ganti warna */
+/* #navbar li a.active (agar home aktif) diambil dari index.html class aktiv di home */
+#navbar li a:hover,
+#navbar li a.active {
+    color: orange;
+}
+
+/* garis bawah */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 20%;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    bottom: -5px;
+    left: 30px;
+    text-align: center;
+
+}
+
+
+/*  ###############Orang##############  */
+
+#orang {
+    padding: 0px 80px;
+    background-image: url("img/ba.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 75% right 0;
+    display: flex;
+    align-items: flex-start;
+    /* align-items: flex-start; (button) */
+    justify-content: center;
+    flex-direction: column;
+    ;
+}
+
+#orang h4 {
+
+    padding-bottom: 15px;
+    /* jarak ke bawah */
+}
+
+#orang h1 {
+    color: #088178;
+}
+
+
+/* ######button############### */
+#orang button {
+    /* background-image: url("img/button.png"); (jika ingin memakai gambar
+    background-color: transparent; */
+    background-color: #088178;
+    color: white;
+    border: 0;
+    /* mengatur ukuran button */
+
+    /* padding: 0px 8px 8px 0px;   (atas,kanan,bawah,kiri)*/
+    padding: 14px 50px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+/* ketika diklik muncul  */
+#orang button:hover {
+    background-image: url("img/button.png");
+    color: white;
+    background-color: orange;
+    border-radius: 50px;
+    /* color: warna untuk text */
+}
+
+
+/* "section-p1">(class untuk mengatur jarak) */
+/* ###############################################PENTING################################################################### */
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0px;
+}
+
+/* ###### fitur ######## */
+#fitur {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: space-between; (biar ada space antar fitur */
+    flex-wrap: wrap;
+    /* biar keatur */
+}
+
+#fitur .fe-box {
+    width: 180px;
+    height: 200px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid cadetblue;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* agar diklik muncul di box */
+#fitur .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(10, 4, 125, 0.1);
+    border: 3px solid cadetblue;
+}
+
+/* gambar */
+#fitur .fe-box img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#fitur .fe-box h6 {
+    display: inline-block;
+    margin-top: 5px;
+    /* display: inline-block;  (agar sesuai tulisan)*/
+
+    /* padding: 0px 8px 8px 0px;   (atas,kiri,bawah,kanan */
+    padding: 8px 8px 8px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: blue;
+    background-color: #fddde4;
+}
+
+/* button agar ada warna berbeda-beda */
+#fitur .fe-box:nth-child(2) h6 {
+    background-color: #bef37a;
+}
+
+#fitur .fe-box:nth-child(3) h6 {
+    background-color: #8ebc52;
+}
+
+#fitur .fe-box:nth-child(4) h6 {
+    background-color: #d0f81c;
+}
+
+#fitur .fe-box:nth-child(5) h6 {
+    background-color: #d2a1f3;
+}
+
+#fitur .fe-box:nth-child(6) h6 {
+    background-color: #8ff5f3;
+}
+
+
+/* ############## kategori ############################ */
+#produk1 {
+    text-align: center;
+}
+
+#produk1 .pro-produk {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    flex-wrap: wrap;
+
+}
+
+#produk1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #9c9a9a;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(176, 38, 38, 0.03);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+
+}
+
+#produk1 .pro img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#produk1 .pro .deskripsi {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#produk1 .pro span {
+    color: #606063;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#produk1 .pro .des h5 {
+    color: #1a1a1a;
+    font-size: 20 px;
+    margin: 15px;
+
+}
+
+#produk1 .pro .deskripsi i {
+    font-size: 20px;
+}
+
+#produk1 .pro .bintang {
+    color: #f6d815;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+#produk1 .pro .deskripsi h4 {
+    padding-top: 5px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #8ff5f3;
+    text-align: center;
+}
+
+#produk1 .pro .fa-cart-shopping {
+
+    /* buat tombol buttom */
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+
+    /* warna tombol */
+    color: #088178;
+    border: 1px solid #dcb406;
+    position: absolute;
+
+    /*  ngatur kebawah keranjang */
+    bottom: 8px;
+    /* ngatur ke kanan  */
+    right: 10px;
+}
+
+
+#produk1 .pro .fa-cart-shopping {
+    background-color: orange;
+    /* color: warna untuk text */
+}
+
+/* agar diklik muncul di box */
+#produk1 .pro:hover {
+    box-shadow: 10px 10px 54px rgba(10, 4, 125, 0.1);
+    border: 3px solid cadetblue;
+}
+
+/* ketika diklik muncul  */
+#produk1 .btu {
+    display: inline-block;
+    margin-top: 5px;
+    /* display: inline-block;  (agar sesuai tulisan)*/
+    background-color: #088178;
+    color: white;
+
+
+    /* padding: 0px 8px 8px 0px;   (atas,kanan,bawah,kiri)*/
+    padding: 18px 18px 18px 18px;
+    line-height: 1;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 17px;
+
+
+}
+
+#produk1 button:hover {
+    background-color: orange;
+    /* color: warna untuk text */
+}
+
+/* ###################### BANNER #################################*/
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b2.jpg");
+
+    /* ukuran background  dan mengatur background*/
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#banner h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#banner h2 span {
+    color: orange;
+}
+
+/* ######button############### */
+#banner .btu {
+    display: inline-block;
+    margin-top: 5px;
+    /* display: inline-block;  (agar sesuai tulisan)*/
+    background-color: #088178;
+    color: white;
+
+    /* padding: 0px 8px 8px 0px;   (atas,kanan,bawah,kiri)*/
+    padding: 15px 15px;
+    line-height: 1;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+}
+
+/* ketika diklik muncul  */
+#banner button:hover {
+    background-color: orange;
+    /* color: warna untuk text */
+}
+
+
+#banner2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#banner2 .banner-nih {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/b17.jpg");
+
+    /* ukuran banner */
+    min-width: 640px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#banner2 .banner-nih2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/b18.jpg");
+    min-width: 640px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+
+#banner2 h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#banner2 h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#banner2 span {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+/* ######button############### */
+button.bti {
+    background-color: transparent;
+    /* padding: 0px 8px 8px 0px;   (atas,kanan,bawah,kiri)*/
+    padding: 10px 35px;
+    border: 3px solid white;
+    border-radius: 30px;
+
+    /* text */
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    transition: 0.05s;
+
+    /* jarak  */
+    margin: 15px;
+
+}
+
+/* ketika diklik muncul  */
+#banner2 button:hover {
+    background: #088178;
+    border: 3px solid #088178;
+    /* color: warna untuk text */
+}
+
+
+/* ###############BANNER 3 ###################### */
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding: 0px 8px 8px 0px;   (atas,kanan,bawah,kiri)*/
+    padding: 0px 25px 8px 25px;
+
+    min-width: 40px;
+    height: 35vh;
+}
+
+/* ################### foto 3 */
+#banner3 .banner-noh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/b10.jpg");
+    min-width: 30px;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-noh2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/b16.jpg");
+    min-width: 30px;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+#banner3 .banner-noh3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("img/banner/b19.jpg");
+    min-width: 30px;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 h2 {
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+#banner3 h3 {
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+/* ############################################################ laporan######################################################################## */
+#laporan {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 30vh;
+    width: 100%;
+    align-items: center;
+    background-image: url("img/banner/b14");
+    background-color: #1d164b
+}
+
+#laporan h4 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#laporan p {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(98, 96, 96);
+}
+
+#laporan span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(209, 159, 11);
+}
+
+
+
+/* tentang button */
+#laporan .form {
+    display: flex;
+    width: 45%;
+    padding-left: 55px;
+}
+
+#laporan input {
+    height: 3em;
+    padding: 0 1em;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 20px;
+}
+
+#laporan button {
+    background-color: transparent;
+    /*    padding: 7px 20px;  (atas-bawah , kanan-kiri)*/
+    padding: 7px 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+    /* text */
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    margin-left: 20px;
+}
+
+#laporan button:hover {
+    background: #088178;
+    border: 3px solid #088178;
+    /* color: warna untuk text */
+}
+
+
+/* #################FOOTER####################################################### */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+
+footer .logoo {
+    margin-bottom: 50px;
+}
+
+footer h4 {
+    font-size: 17px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    padding-right: 4px;
+    cursor: pointer;
+    color: #088178;
+}
+
+footer .install .row img {
+    border: 1px solid blue;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: rgb(6, 72, 164);
+}
+
+.hakcipta {
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 50px;
+    font-size: 55px;
+    background-color: #1a1a1a;
+
+}
+
+.hakcipta p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* ##################    Shop.html #################################################################################################################### */
+
+#page-header {
+    background-image: url("img/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2 {
+    color: white;
+}
+
+#page-header p {
+    color: orange;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#pagination a:hover {
+    background-color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ##################    UNTUK MENGATUR ipad #################################################################################################################### */
+@media (max-width:790px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        /*      flex-direction: column; (biar satu baris) */
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+
+        /* ngatur bacground */
+        background-color: #088178;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+
+        transition: 0.3s;
+    }
+
+
+    #navbar.active {
+        right: 0;
+    }
+
+    #navbar li {
+        color: white;
+        margin-bottom: 25px;
+    }
+
+    #navbar li a {
+
+        color: white;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: black;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        /* agar muncul di mobile namun tidak muncul di web ( display: none;) berada css khusus web nomor 85 */
+        display: inline-block;
+
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: rgb(252, 246, 246);
+        font-size: 24px;
+
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #orang {
+        height: 70vh;
+
+        /* font */
+        padding: 0 20px;
+
+        /* background pizza */
+        background-position: top 4% right 45%;
+    }
+
+
+    #fitur .fe-box {
+        justify-content: center;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #produk1 {
+        justify-content: center;
+    }
+
+    #banner2 .banner-nih {
+        min-width: 100%;
+        height: 40vh;
+    }
+
+    #banner2 .banner-nih2 {
+        min-width: 100%;
+        height: 40vh;
+    }
+
+    #banner3 .banner-noh {
+        padding: 0% 40px;
+    }
+
+    #banner3 .banner-noh {
+        width: 30%;
+    }
+
+    #laporan {
+        height: 270px;
+    }
+
+    #laporan .form {
+        width: 90%;
+    }
+
+    footer .col-install {
+        margin-left: 350px;
+        margin-top: -100px;
+    }
+}
+
+
+/* ##################    UNTUK MENGATUR IPHONE #################################################################################################################### */
+@media (max-width:470px) {
+    #header {
+        padding: 10px 30px;
+    }
+
+    #navbar.active {
+        right: 220px;
+    }
+
+    #produk1 .pro {
+        min-width: 320px;
+        /* margin: 50px 15px 0px 0px; */
+        align-items: center;
+        margin-left: -45px;
+        margin-top: 5px;
+    }
+
+    #banner2 .banner-nih {
+        min-width: 320px;
+        height: 40vh;
+        margin-left: -45px;
+    }
+
+    #banner2 .banner-nih2 {
+        min-width: 320px;
+        height: 40vh;
+        margin-left: -45px;
+    }
+
+    #banner3 {
+        padding: 0 10px;
+        margin-left: 35px;
+    }
+
+    #banner3 .banner-noh {
+        min-width: 300px;
+    }
+
+    #banner3 h2 {
+        color: white;
+        font-size: 20px;
+    }
+
+    #laporan {
+        margin-top: 520px;
+    }
+
+    #laporan h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        margin-left: -70px;
+    }
+
+    #laporan p {
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: -70px;
+    }
+
+
+    #laporan input {
+        width: 200px;
+        margin-left: -100px;
+    }
+}
