@@ -41,40 +41,40 @@
     <section id="prodetail" class="section-p1">
         <div class="single-pro-image">
             <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
-
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+                    <img src="img/products/f1.jpg" width="100%" id="smallImg" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+                    <img src="img/products/f2.jpg" width="100%" id="smallImg" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+                    <img src="img/products/f3.jpg" width="100%" id="smallImg" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+                    <img src="img/products/f4.jpg" width="100%" id="smallImg" alt="">
                 </div>
-
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
 
 
-
+        <div class="single-pro-detail">
+            <h6> Welcome</h6>
+            <h4> Kaos Pria </h4>
+            <h2> Rp.25.000</h2>
+            <select>
+                <option>Pilih Ukuran</option>
+                <option>xl</option>
+                <option>L</option>
+                <option>M</option>
+                <option>Pilih Ukuran</option>
+                <option>Pilih Ukuran</option>
+            </select>
+            <input type="number" value="1">
+            <button>Tambah </button>
+            <h4>Produk Detail </h4>
+            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+        </div>
 
 
 
@@ -98,7 +98,85 @@
 
 
 
+    <section id="produk1" class="section-p1">
+        <h1> Kategori Produk </h1>
+        <p> Berbagai Produk Terbaru </p>
+        <div class="pro-produk">
 
+            <!-- kolom  -->
+            <div class="pro">
+                <img src="img/products/f1.jpg" alt="">
+                <div class="deskripsi">
+                    <span>adidas </span>
+                    <h5> Baju Abstrak Bunga </h5>
+                    <div class="bintang">
+                        <a> 4.6 <i class="fas fa-star"></i></a>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#"><i id="belanja" class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="img/products/f1.jpg" alt="">
+                <div class="deskripsi">
+                    <span>adidas </span>
+                    <h5> Baju Abstrak Bunga </h5>
+                    <div class="bintang">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#"><i id="belanja" class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+
+
+            <div class="pro">
+                <img src="img/products/f1.jpg" alt="">
+                <div class="deskripsi">
+                    <span>adidas </span>
+                    <h5> Baju Abstrak Bunga </h5>
+                    <div class="bintang">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#"><i id="belanja" class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+
+
+            <div class="pro">
+                <img src="img/products/f1.jpg" alt="">
+                <div class="deskripsi">
+                    <span>adidas </span>
+                    <h5> Baju Abstrak Bunga </h5>
+                    <div class="bintang">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$50</h4>
+                </div>
+                <a href="#"><i id="belanja" class="fa-solid fa-cart-shopping "></i></a>
+            </div>
+
+        </div>
+        <button class="btu"> Selengkapnya </button>
+    </section>
 
 
 
@@ -183,7 +261,23 @@
 
 
 
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("smallImg");
 
+        smallimg[0].onclick = function () {
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function () {
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function () {
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function () {
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
 
 
 

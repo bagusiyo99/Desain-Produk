@@ -793,23 +793,78 @@ footer a:hover {
 }
 
 
+/* ##################    Sproduct.html #################################################################################################################### */
+#prodetail {
+    display: flex;
+    margin-top: 20px;
+}
 
 
 
+#prodetail .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    /*  flex-basis: 24%; (ukuran baju) */
+    cursor: pointer;
+}
 
 
+#prodetail .single-pro-detail {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetail .single-pro-detail h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetail .single-pro-detail h2 {
+    font-size: 25px;
+}
 
 
+#prodetail .single-pro-detail select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
 
+#prodetail .single-pro-detail input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
 
+#prodetail .single-pro-detail input {
+    outline: none;
+}
 
+#prodetail .single-pro-detail button {
+    background: #088178;
+    color: #fff;
+    padding: 10px 20px;
+    border: 3px solid white;
+    border-radius: 10px;
 
+    /* text */
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    transition: 0.05s;
 
-
-
-
-
-
+}
 
 
 
