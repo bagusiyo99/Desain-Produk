@@ -926,6 +926,37 @@ footer a:hover {
     background-color: #088178;
 }
 
+/* ##################    about.html #################################################################################################################### */
+#page-header.about-header {
+    background-image: url(img/about/banner.png);
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+#about-head marquee {
+    padding: 5px 15px;
+    background-color: #088178;
+    border-radius: 5px;
+
+}
+
+#about-head marquee h4 {
+    color: white;
+    font-size: 15px;
+
+}
 
 /* ##################    UNTUK MENGATUR ipad #################################################################################################################### */
 @media (max-width:790px) {
