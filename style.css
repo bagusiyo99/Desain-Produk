@@ -794,6 +794,7 @@ footer a:hover {
 
 
 /* ##################    Sproduct.html #################################################################################################################### */
+
 #prodetail {
     display: flex;
     margin-top: 20px;
@@ -867,13 +868,63 @@ footer a:hover {
 }
 
 
+/* ##################    blog.html #################################################################################################################### */
 
+#page-header.blog-header {
+    background-image: url(img/banner/b19.jpg);
+}
 
+#blog {
+    padding: 150px 150px 0 150px;
+}
 
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
 
+#blog .blog-img {
+    width: 50%;
+    margin-right: 40px;
+}
 
+#blog img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
 
+#blog .blog-detail {
+    width: 50%;
+}
 
+#blog .blog-detail a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+}
+
+#blog .blog-detail a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 8px;
+    right: -60px;
+}
+
+#blog .blog-detail a:hover {
+    color: #088178;
+}
+
+#blog .blog-detail a:hover::after {
+    background-color: #088178;
+}
 
 
 /* ##################    UNTUK MENGATUR ipad #################################################################################################################### */
