@@ -976,6 +976,117 @@ footer a:hover {
     border-radius: 20px;
 }
 
+/* ##################    contact.html #################################################################################################################### */
+
+
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details .details span,
+#form-details form {
+    font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#form-details form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#form-details form input,
+#form-details form textarea {
+    width: 60%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #088178;
+    border-radius: 5px;
+}
+
+#form-details form button {
+    display: inline-block;
+    margin-top: 5px;
+    /* display: inline-block;  (agar sesuai tulisan)*/
+    background-color: #088178;
+    color: white;
+
+
+    /* padding: 0px 8px 8px 0px;   (atas,kanan,bawah,kiri)*/
+    padding: 10px 28px 10px 28px;
+    line-height: 1;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 17px;
+
+}
+
+#form-details button:hover {
+    background-color: orange;
+    /* color: warna untuk text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ##################    UNTUK MENGATUR ipad #################################################################################################################### */
