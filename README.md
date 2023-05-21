@@ -1,2 +1,2 @@
-# Desain company
+# Desain company profile
 belajar mengikuti tutorial youtobe
